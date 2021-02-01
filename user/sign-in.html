@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sign-up.css">
+    <link rel="stylesheet" href="sign-in.css">
+    <link rel="stylesheet" href="../shared.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="index.html" class="nav-logo-container"><img src="../resources/images/hiking.png" alt="" class="nav-logo"></a>
+            <ul class="nav-items">
+                <li class="nav-item">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../tours/tours.html">Tours</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../about-us/about-us.html">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sign-in.html">Sign in</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sign-up.html">Sign up</a>
+                </li>
+            </ul>
+            <button class="burger-btn">
+                <img src="resources/icons/burger.svg" alt="">
+            </button>
+            <div class="mobile-menu">
+                <ul class="mobile-options">
+                    <li class="mobile-option">
+                        <img class="mobile-icon" src="../resources/icons/house.svg" alt="">
+                        <a class="mobile-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="mobile-option">
+                        <img class="mobile-icon" src="../resources/icons/compas.svg" alt="">
+                        <a class="mobile-link" href="../tours/tours.html">Tours</a>
+                    </li>
+                    <li class="mobile-option">
+                        <img class="mobile-icon" src="../resources/icons/info.svg" alt="">
+                        <a class="mobile-link" href="../about-us/about-us.html">About Us</a>
+                    </li>
+                    <li class="mobile-option">
+                        <img class="mobile-icon" src="../resources/icons/login.svg" alt="">
+                        <a class="mobile-link" href="sign-in.html">Sign in</a>
+                    </li>
+                    <li class="mobile-option">
+                        <img class="mobile-icon" src="../resources/icons/create.svg" alt="">
+                        <a class="mobile-link" href="sign-up.html">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="backdrop"></div>
+        <div class="signup-header">
+            <img src="../resources/images/fern.png" class="header-img" alt="">
+            <h1 class="section-title">Hiking New Zealand</h1>
+        </div>
+        <div class="form-container">
+            <div class="socialmedia-signup">
+                <div class="socialmedia-button" id="facebook-btn">
+                    <img src="../resources/icons/facebook.svg" alt="">
+                    <p>Sign in using Facebook</p>
+                </div>
+                <div class="socialmedia-button" id="google-btn">
+                    <img src="../resources/icons/google_plus.svg" alt="">
+                    <p>Sign in using Google</p>
+                </div>
+            </div>
+            <h2 class="main-form-title">Or Sign in with your email adress</h2>
+            <form action="" class="main-form">
+                <div class="input-item">
+                    <input type="text" placeholder="E-mail adress">
+                </div>
+                <div class="input-item">
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="input-item input-buttom-container">
+                    <input type="submit" value="Sign in">
+                </div>
+            </form>
+            <a href="" class="forgot-password">Did you forget your password?</a>
+        </div>
+    </main>
+    <footer class="main-footer" id="signup-footer">
+        <div class="footer-content">
+            <p class="footer-rights">© 2020 Hiking New Zealand - all rights reserved.</p>
+            <div class="redes-sociales">
+                <a class="red-social" href="">
+                    <img src="../resources/icons/instagram.svg" alt="">
+                </a>
+                <a class="red-social" href="">
+                    <img src="../resources/icons/twitter.svg" alt="">
+                </a>
+                <a class="red-social" href="">
+                    <img src="../resources/icons/facebook.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="../shared.js"></script>
+</body>
+</html>

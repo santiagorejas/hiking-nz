@@ -1,0 +1,382 @@
+
+
+/* home */
+
+.home-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: calc(100vh - 2.5rem);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('/resources/images/main_background2.jpg');
+    background-size: cover;
+    background-position: 70% 0rem;
+    border-bottom: white solid 1px;
+    color: white;
+}
+
+.main-title,
+.home-header-slogan {
+    text-align: center;
+    width: 80%;
+}
+
+.main-title {
+    font-size: 3.5rem;
+    font-family: "DM Serif Display", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.1);
+}
+
+.home-header-slogan {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.home-header-button {
+    font-size: 1.5rem;
+    border: white 2px solid;
+    padding: 1.2rem;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    transition: opacity 200ms;
+}
+
+.home-header-button:hover {
+    opacity: 60%;
+}
+
+.home-header-button p {
+    margin: 0;
+    font-weight: 500;
+}
+
+.home-header-button img {
+    margin-left: 0.5rem;
+}
+
+/* plans */
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: black;
+    padding-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.plan-image-container {
+    width: 100%;
+    order: 1;
+    background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.2) 40%);
+}
+
+.plan-image {
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.plan-features {
+    order: 3;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+.plan-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+
+.plan-information {
+    order: 2;
+    width: 90%;
+    text-align: center;
+}
+
+.plan-title {
+    font-size: 2rem;
+}
+
+
+/* other destinations */
+
+#others {
+    background-color: #eeeeee;
+}
+
+.other-plan {
+    height: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.8);
+    color: white;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    border-bottom: solid 1px white;
+    transition: transform 200ms;
+}
+
+#others-1 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('/resources/images/others_1.jpg');
+}
+
+#others-2 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('/resources/images/others_2.jpg');
+}
+
+#others-3 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('/resources/images/others_3.jpg');
+}
+
+#others-4 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('/resources/images/others_4.jpg');
+}
+
+/* Features */
+
+#features {
+    background-color:  #f6f6f6;
+}
+
+.main-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.main-feature-image {
+    width: 25%;
+    max-width: 8rem;
+}
+
+.main-feature-title,
+.main-feature-content {
+    text-align: center;
+}
+
+.main-feature,
+.client {
+    max-width: 25rem;
+}
+
+/* Clients */
+
+.clients {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-style: italic;
+    align-items: center;
+    justify-content: center;
+    font-weight: 200;
+}
+
+.client {
+    margin: 2rem;
+}
+
+.client-name {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+
+@media (min-width: 40rem) {
+
+    /* HEADER */
+
+    .home-header {
+        background-image: radial-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url('/resources/images/main_background2.jpg');
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 2rem;
+        background-position: 50% 0%;
+    }
+
+    .main-title {
+        font-size: 4.5rem;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+    }
+
+    .home-header-slogan {
+        text-align: left;
+    }
+
+    .home-header-button {
+        margin-top: 2rem;
+    }
+
+    /* OTHERS */
+
+
+    .other-plan:hover {
+
+        transform: scale(1.1);
+    }
+
+    .section-title {
+        padding: 4rem 0;
+    }
+
+    .others-plans {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .other-plan {
+        border: 0;
+    }
+
+    /* FEATURES */
+
+    .main-features {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .main-feature {
+        margin: auto 2rem;
+    }
+
+    /* CLIENTS COMMENTS*/
+
+    .clients {
+        flex-direction: row;
+    }
+
+    .client-name {
+        text-align: right;
+    }
+
+}
+
+@media (min-width: 60rem) {
+
+    .home-header {
+        background-position: 0;
+    }
+    
+    .plan {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .plan-title {
+        margin: 0.3rem 0;
+        font-size: 1.5rem;
+    }
+
+    .plan-features {
+        flex-direction: column;
+    }
+
+    .plan-feature {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .plan-feature h4 {
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+
+    .plan-image-container {
+        width: 45%;
+        background: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0.2) 40%);
+    }
+
+    .plan-features {
+        width: 15%;
+        order: 2;
+        margin: 0;
+    }
+
+    .plan-information {
+        width: 40%;
+        order: 3;
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .plan-button {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+    .plan-inverted {
+        flex-direction: row-reverse;
+    }
+
+    .plan-inverted .plan-button {
+        left: 1rem;
+    }
+
+    .plan-inverted .plan-image-container {
+        background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.2) 40%);
+    }
+
+}
+
+@media (min-width: 90rem) {
+
+    /* PLAN */
+
+    .plan-title {
+        font-size: 2.2rem;
+    }
+
+    .plan-information,
+    .plan-feature h4 {
+        font-size: 1.3rem;
+    }
+
+    
+
+
+    /* OTHERS */
+
+    .others-plans {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+@media (min-height: 60rem) {
+
+    .home-header {
+        background-position: 60% 0;
+    }
+
+}

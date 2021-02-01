@@ -1,0 +1,10 @@
+.forgot-password {
+    text-decoration: none;
+    color: rgba(0,0,0,0.7);
+    margin-bottom: 2rem;
+}
+
+#signup-footer {
+    background-image: linear-gradient(to bottom, rgba(255,255,255,1) 15%, rgba(255, 255, 255, 0.2) 50% ), url('/resources/images/footer_background_2.jpg');
+    background-position: 0 10%;
+}

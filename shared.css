@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    font-size: 1.1rem;
+    margin: 0;
+    overflow:auto;
+    display: grid;
+    grid-template-rows: 2.5rem auto 50vh;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+.main-header {
+    grid-row: 1 / 2;
+}
+
+main {
+    grid-row: 2 / 3;
+}
+
+.main-footer {
+    grid-row: 3 / 4;
+}
+
+/* nav */
+
+.main-nav {
+    height: 2.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid white 1px;
+    background-color: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 101;
+}
+
+.nav-logo {
+    height: 2rem;
+    margin: 0.1rem 0.5rem;
+}
+
+.nav-items {
+    display: none;
+}
+
+.burger-btn {
+    border: none;
+    background-color: transparent;
+    border-radius: 3px;
+}
+
+
+/* backdrop */
+
+.backdrop {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* boton */
+.button {
+    order: 4;   
+    border: white 1px solid;
+    padding: 0.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    width: 10rem;
+    background-color: rgba(0,0,0,0.9);
+    transition: opacity 200ms;
+}
+
+.button:hover {
+    opacity: 60%;
+}  
+
+.button p {
+    margin: 0;
+}
+
+/* mobile menu */
+
+.mobile-menu {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    z-index: 102;
+    transform: translateX(100%);
+    transition: transform 500ms;
+    display: flex;
+    align-items: center;
+}
+
+.mobile-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 80%;
+    list-style: none;
+}
+
+.mobile-option {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.mobile-icon {
+    height: 1.2rem;
+}
+
+.mobile-link {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+    margin-left: 1.2rem;
+}
+
+.mobile-menu-open {
+    transform: translateX(0);
+}
+
+/* header */
+
+.main-header {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('/resources/images/main_background.jpg');
+    background-size: cover;
+    background-position: center;
+    border-bottom: white solid 1px;
+}
+
+
+/* SECTION */
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 2rem 0;
+    color: #212121;
+    margin: 0;
+    width: 80%;
+    font-weight: 400;
+    margin: auto;
+}
+
+/* footer */
+
+.main-footer {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,1) 15%, rgba(255, 255, 255, 0.2) 50% ), url('/resources/images/footer_background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 1rem;
+}
+
+.footer-rights {
+    color: white;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (min-width: 50rem) {
+
+    body {
+        grid-template-rows: 4rem auto 50vh;
+    }
+
+    .main-nav {
+        height: 4rem;
+    }
+
+    .burger-btn {
+        display: none;
+    }
+
+    .nav-items {
+        display: block;
+        list-style: none;
+        display: flex;
+    }
+
+    .nav-item {
+        margin: auto 2rem;
+        opacity: 60%;
+        transition: opacity 200ms;
+    }
+
+    .nav-item:hover {
+        opacity: 100%;
+    }
+
+    .nav-item a {
+        text-decoration: none;
+        color: white;
+        opacity: 80%;
+    }
+
+}
+
+@media (min-width: 80rem) {
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+}

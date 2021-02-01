@@ -1,0 +1,176 @@
+main {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.search-box,
+.filter-box {
+    width: 90%;
+    max-width: 30rem;
+}
+
+
+.search-box {
+    background-color: black;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-box img {
+    margin: 0 0.8rem;
+    height: 1.2rem;
+}
+
+.search-box input {
+    width: calc(100% - 3rem);
+    height: 2rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* FORM FILTER */
+
+.filter-box {
+    display: grid;
+    row-gap: 0.5rem;
+    margin: 2rem auto;
+    grid-auto-rows: 2rem;
+    background-color: #eee;
+    padding: 0.8rem;
+    border-radius: 8px;
+}
+
+.filter-box input,
+.filter-box select {
+    padding: 0.4rem;
+    border-radius: 4px;
+    border: 1px #ccc solid;
+}
+
+.filter-box [type="submit"] {
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+}
+
+/* GRID*/
+
+.tours-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: 5rem auto;
+    display: grid;
+    grid-auto-rows: auto;
+    justify-items: center;
+    row-gap: 5rem;
+    column-gap: 2rem;
+}
+
+.tour-card {
+    background-color: #f6f6f6;
+    position: relative;
+    width: 90%;
+    border-radius: 12px;
+    overflow: hidden;
+    border: #ccc 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tour-days {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    font-size: 1rem;
+    padding: 0.3rem;
+    width: 4rem;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    margin: 0;
+}
+
+.tour-img {
+    width: 100%;
+}
+
+.tour-title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 0.5rem auto;
+    width: 80%;
+    padding: 0.5rem;
+    border-bottom: rgba(0,0,0,0.3) 1px solid;
+}
+
+.tour-features {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.tour-feature {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.tour-feature-text {
+    width: 75%;
+    font-size: 0.9rem;
+    margin: 0;
+    text-align: left;
+}
+
+.tour-feature-img {
+    background-color: black;
+    padding: 0.4rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+.tour-description {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+.button {
+    margin: 1rem auto;
+}
+
+#tours-footer {
+    background-image: linear-gradient(to bottom, rgba(255,255,255,1) 15%, rgba(255, 255, 255, 0.2) 50% ), url('/resources/images/footer_background_4.jpg');
+    background-position: 0 60%;
+}
+
+@media (min-width: 40rem) {
+
+    .tours-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    .tour-card {
+        box-shadow: rgba(0,0,0,0.3) 3px 3px 12px 3px;
+    }
+
+}
+
+
+
+@media (min-width: 60rem) {
+
+    .tours-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}

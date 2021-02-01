@@ -1,0 +1,189 @@
+/* plan container */
+
+.plan-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.plan-main-information {
+    background-color: #080808;
+    padding: 3rem 0;
+}
+
+.plan-section-title {
+    font-weight: 400;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+}
+
+/* youtube video */
+
+.iframe-container {
+    position: relative;
+    width: 90%;
+    padding-bottom: 56.25%; 
+    height: 0;
+    margin: 1rem auto;
+    text-align: center;
+    flex: 1;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+}
+
+
+/* plan book */
+
+.plan-book-container {
+    background-color: #111;
+    width: 90%;
+    color: white;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.plan-book-title {
+    font-weight: 400;
+    text-align: center;
+}
+
+.plan-book-feature {
+    margin: 2rem 1rem;
+}
+
+.plan-book-feature h2 {
+    font-weight: 500;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.plan-book-feature-content {
+    display: flex;
+    align-items: center;
+}
+
+.plan-book-feature-content img {
+    width: 1.5rem;
+}
+
+.plan-book-feature-content p {
+    margin: 1.2rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 0rem;
+}
+
+.book-btn {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0 2rem;
+}
+
+.book-btn p {
+    width: 80%;
+    max-width: 12rem;
+    padding: 1rem;
+    border: white 2px solid;
+    margin: auto;
+    transition: opacity 200ms;
+}
+
+.book-btn:hover p {
+    opacity: 50%;
+}
+
+/* description */
+.plan-detailed-information-item {
+    width: 90%;
+    margin: auto;
+    max-width: 40rem;
+}
+
+.plan-description-text {
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+/* highlights */
+
+.plan-highlight {
+    display: flex;
+}
+
+.plan-highlight-title {
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+}
+
+/* footer */
+#plan-footer {
+    background-image: linear-gradient(to bottom, rgba(255,255,255,1) 15%, rgba(255, 255, 255, 0.2) 50% ), url('/resources/images/footer_background_6.jpg');
+    background-position: 0 30%;
+}
+
+@media (min-width: 40rem) {
+
+    .plan-book-features {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (min-width: 60rem) {
+
+    .plan-book-features {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .plan-detailed-information {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .plan-detailed-information-item {
+        margin: 0 3rem;
+        width: 45%;
+    }
+
+}
+
+@media (min-width: 80rem) {
+
+    .plan-book-features {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+@media (min-width: 100rem) {
+
+    .plan-main-information {
+        display: grid;
+        grid-template-columns: 6fr 4fr;
+    }
+
+    .iframe-container {
+        width: 95%;
+    }
+
+    .plan-book-features {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}

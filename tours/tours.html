@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tours.css">
+    <link rel="stylesheet" href="../shared.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="" class="nav-logo-container"><img src="/resources/images/hiking.png" alt="" class="nav-logo"></a>
+            <ul class="nav-items">
+                <li class="nav-item">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="tours.html">Tours</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../about-us/about-us.html">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../user/sign-in.html">Sign in</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../user/sign-up.html">Sign up</a>
+                </li>
+            </ul>
+            <button class="burger-btn">
+                <img src="/resources/icons/burger.svg" alt="">
+            </button>
+            <div class="mobile-menu">
+                <ul class="mobile-options">
+                    <li class="mobile-option">
+                        <img class="mobile-icon" src="/resources/icons/house.svg" alt="">
+                        <a class="mobile-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="mobile-option">
+                        <img class="mobile-icon" src="/resources/icons/compas.svg" alt="">
+                        <a class="mobile-link" href="tours.html">Tours</a>
+                    </li>
+                    <li class="mobile-option">
+                        <img class="mobile-icon" src="/resources/icons/info.svg" alt="">
+                        <a class="mobile-link" href="../about-us/about-us.html">About Us</a>
+                    </li>
+                    <li class="mobile-option">
+                        <img class="mobile-icon" src="/resources/icons/login.svg" alt="">
+                        <a class="mobile-link" href="../user/sign-in.html">Sign in</a>
+                    </li>
+                    <li class="mobile-option">
+                        <img class="mobile-icon" src="/resources/icons/create.svg" alt="">
+                        <a class="mobile-link" href="../user/sign-in.html">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="backdrop"></div>
+    <main>
+        <h1 class="section-title">Our Tours</h1>
+        <div class="search-box">
+            <input type="text">
+            <img src="../resources/icons/magnifier.svg" alt="">
+        </div>
+        <form class="filter-box">
+            <select name="" id="" aria-placeholder="Month">
+                <option value="">Location</option>
+                <option value="">North Island</option>
+                <option value="">South Island</option>
+            </select>
+            <select name="" id="" aria-placeholder="Month">
+                <option value="">Hiking Type</option>
+                <option value="">Day hikes (day packs)</option>
+                <option value="">Multiday hikes (10-12kg packs)</option>
+            </select>
+            <input type="number" placeholder="Duration">
+            <input type="submit">
+        </form>
+        <div class="tours-container">
+        <div class="tour-card">
+            <h2 class="tour-days">3<br>days</h2>
+            <img class="tour-img" src="images/1.webp" alt="">
+            <h1 class="tour-title">Custom Tours</h1>
+            <ul class="tour-features">
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/dollar.svg" alt="">
+                    <p class="tour-feature-text">$0.00</p>
+                </div>
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/map.svg" alt="">
+                    <p class="tour-feature-text">Auckland or Christchurch</p>
+                </div>
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/house.svg" alt="">
+                    <p class="tour-feature-text">Backcountry Huts, Cabins, Camping, Hotels, Lodges</p>
+                </div>
+            </ul>
+            <p class="tour-description">Have it your way with a tailor-made holiday.</p>
+            <div class="button">
+                <p>Learn More</p>
+                <img src="/resources/icons/more.svg" alt="">
+            </div>
+        </div>
+        <div class="tour-card">
+            <h2 class="tour-days">13<br>days</h2>
+            <img class="tour-img" src="images/2.webp" alt="">
+            <h1 class="tour-title">New Zealand Uncut</h1>
+            <ul class="tour-features">
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/dollar.svg" alt="">
+                    <p class="tour-feature-text">$8,950.00</p>
+                </div>
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/map.svg" alt="">
+                    <p class="tour-feature-text">Auckland / Queenstown</p>
+                </div>
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/house.svg" alt="">
+                    <p class="tour-feature-text">Hotels, Lodges</p>
+                </div>
+            </ul>
+            <p class="tour-description">Take on the complete New Zealand travel experience, exploring the varied landscapes of both islands as you weave your way from north to south.</p>
+            <div class="button">
+                <p>Learn More</p>
+                <img src="/resources/icons/more.svg" alt="">
+            </div>
+        </div>
+        <div class="tour-card">
+            <h2 class="tour-days">5<br>days</h2>
+            <img class="tour-img" src="images/3.webp" alt="">
+            <h1 class="tour-title">Northern Portion</h1>
+            <ul class="tour-features">
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/dollar.svg" alt="">
+                    <p class="tour-feature-text">$3,300.00</p>
+                </div>
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/map.svg" alt="">
+                    <p class="tour-feature-text">Auckland / Wellington</p>
+                </div>
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/house.svg" alt="">
+                    <p class="tour-feature-text">Hotels, Lodges</p>
+                </div>
+            </ul>
+            <p class="tour-description">Delight in the array of natural wonders which bless the North Island. Begin with the Waitomo glow worm caves, then journey on to the geothermal marvels of Rotorua and active volcanoes and lava valleys in the..</p>
+            <div class="button">
+                <p>Learn More</p>
+                <img src="/resources/icons/more.svg" alt="">
+            </div>
+        </div>
+        <div class="tour-card">
+            <h2 class="tour-days">5<br>days</h2>
+            <img class="tour-img" src="images/4.webp" alt="">
+            <h1 class="tour-title">Northland Discovery</h1>
+            <ul class="tour-features">
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/dollar.svg" alt="">
+                    <p class="tour-feature-text">$2,480.00</p>
+                </div>
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/map.svg" alt="">
+                    <p class="tour-feature-text">Auckland return</p>
+                </div>
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/house.svg" alt="">
+                    <p class="tour-feature-text">Lodges</p>
+                </div>
+            </ul>
+            <p class="tour-description">Northland is beautiful and it feels a long way from anywhere. Long white beaches stretch between ancient volcanic headlands, remote dune-scapes meld into sub-tropical forests, warm evenings yield to starry nights.</p>
+            <div class="button">
+                <p>Learn More</p>
+                <img src="/resources/icons/more.svg" alt="">
+            </div>
+        </div>
+        <div class="tour-card">
+            <h2 class="tour-days">7<br>days</h2>
+            <img class="tour-img" src="images/5.webp" alt="">
+            <h1 class="tour-title">Peak Bagger Custom Tour</h1>
+            <ul class="tour-features">
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/dollar.svg" alt="">
+                    <p class="tour-feature-text">$4,850.00</p>
+                </div>
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/map.svg" alt="">
+                    <p class="tour-feature-text">Christchurch</p>
+                </div>
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/house.svg" alt="">
+                    <p class="tour-feature-text">Backcountry Huts, Cabins, Camping</p>
+                </div>
+            </ul>
+            <p class="tour-description">This trip is two back-to-back multi-day hikes through some of New Zealand’s finest backcountry. A stunning alpine traverse in Nelson Lakes National Park to Kahurangi’s magnificent limestone plateaus with a magical Lord of the Rings feel.</p>
+            <div class="button">
+                <p>Learn More</p>
+                <img src="/resources/icons/more.svg" alt="">
+            </div>
+        </div>
+        <div class="tour-card">
+            <h2 class="tour-days">8<br>days</h2>
+            <img class="tour-img" src="images/6.webp" alt="">
+            <h1 class="tour-title">Southern Slice</h1>
+            <ul class="tour-features">
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/dollar.svg" alt="">
+                    <p class="tour-feature-text">$5,400.00</p>
+                </div>
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/map.svg" alt="">
+                    <p class="tour-feature-text">Nelson / Queenstown</p>
+                </div>
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/house.svg" alt="">
+                    <p class="tour-feature-text">Hotels, Lodges</p>
+                </div>
+            </ul>
+            <p class="tour-description">Immerse yourself in the uniquely diverse natural landscapes of the South Island. . From the postcard perfect coastline of Abel Tasman National Park, to the equally distinctive lush green rainforests of Punakaiki and the majestic alpine...</p>
+            <div class="button">
+                <p>Learn More</p>
+                <img src="/resources/icons/more.svg" alt="">
+            </div>
+        </div>
+        <div class="tour-card">
+            <h2 class="tour-days">23<br>days</h2>
+            <img class="tour-img" src="images/7.webp" alt="">
+            <h1 class="tour-title">Ultimate New Zealand</h1>
+            <ul class="tour-features">
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/dollar.svg" alt="">
+                    <p class="tour-feature-text">$7,300.00</p>
+                </div>
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/map.svg" alt="">
+                    <p class="tour-feature-text">Auckland / Queenstown</p>
+                </div>
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/house.svg" alt="">
+                    <p class="tour-feature-text">Backcountry Huts, Cabins, Camping, Lodges</p>
+                </div>
+            </ul>
+            <p class="tour-description">Experience the very best New Zealand has to offer in a way that will leave you with a deeper connection with this special country and your fellow travellers.</p>
+            <div class="button">
+                <p>Learn More</p>
+                <img src="/resources/icons/more.svg" alt="">
+            </div>
+        </div>
+        <div class="tour-card">
+            <h2 class="tour-days">5<br>days</h2>
+            <img class="tour-img" src="images/8.webp" alt="">
+            <h1 class="tour-title">Women's Custom Tours</h1>
+            <ul class="tour-features">
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/dollar.svg" alt="">
+                    <p class="tour-feature-text">$0.00</p>
+                </div>
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/map.svg" alt="">
+                    <p class="tour-feature-text">Your choice</p>
+                </div>
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/house.svg" alt="">
+                    <p class="tour-feature-text">Lodges</p>
+                </div>
+            </ul>
+            <p class="tour-description">Sometimes you just need time with the girls. Connect with like-minded women, appreciate the support of other females as you take on new physical challenges and take the opportunity to escape the demands of work and home.</p>
+            <div class="button">
+                <p>Learn More</p>
+                <img src="/resources/icons/more.svg" alt="">
+            </div>
+        </div>
+        <div class="tour-card">
+            <h2 class="tour-days">4<br>days</h2>
+            <img class="tour-img" src="images/9.webp" alt="">
+            <h1 class="tour-title">Arthut's Pass Alpine Hike</h1>
+            <ul class="tour-features">
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/dollar.svg" alt="">
+                    <p class="tour-feature-text">$1,200.00</p>
+                </div>
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/map.svg" alt="">
+                    <p class="tour-feature-text">Christchurch / Christchurch</p>
+                </div>
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/house.svg" alt="">
+                    <p class="tour-feature-text">Backcountry Huts, Lodges</p>
+                </div>
+            </ul>
+            <p class="tour-description">Hike in the heart of the Southern Alps at Arthur’s Pass. Our route traverses beech forests and sub alpine river flats, passing by open scree summits and picturesque tarns.</p>
+            <div class="button">
+                <p>Learn More</p>
+                <img src="/resources/icons/more.svg" alt="">
+            </div>
+        </div>
+        <div class="tour-card">
+            <h2 class="tour-days">5<br>days</h2>
+            <img class="tour-img" src="images/10.webp" alt="">
+            <h1 class="tour-title">Don't Cross the Ladies</h1>
+            <ul class="tour-features">
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/dollar.svg" alt="">
+                    <p class="tour-feature-text">$0.00</p>
+                </div>
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/map.svg" alt="">
+                    <p class="tour-feature-text">Auckland</p>
+                </div>
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/house.svg" alt="">
+                    <p class="tour-feature-text">Lodges</p>
+                </div>
+            </ul>
+            <p class="tour-description">Be treated to a diverse wilderness experience as you travel in the North Island. Discover the world underground at Waitomo, explore the geothermal delights of Rotorua and hike the shores of the gorgeous lakes in this...</p>
+            <div class="button">
+                <p>Learn More</p>
+                <img src="/resources/icons/more.svg" alt="">
+            </div>
+        </div>
+        <div class="tour-card">
+            <h2 class="tour-days">8<br>days</h2>
+            <img class="tour-img" src="images/11.webp" alt="">
+            <h1 class="tour-title">Gillespie & Rabbit Passes Alpine Traverse</h1>
+            <ul class="tour-features">
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/dollar.svg" alt="">
+                    <p class="tour-feature-text">$3,450.00</p>
+                </div>
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/map.svg" alt="">
+                    <p class="tour-feature-text">Wanaka</p>
+                </div>
+                <div class="tour-feature">
+                    <img class="tour-feature-img" src="../resources/icons/house.svg" alt="">
+                    <p class="tour-feature-text">Backcountry Huts, Camping</p>
+                </div>
+            </ul>
+            <p class="tour-description">The Gillespie/Rabbit Passes trip is widely regarded as New Zealand's hardest guided hiking tour. Following the main divide of the South Island this route has exceptional views of the highest peaks, including Mount Aspiring.</p>
+            <div class="button">
+                <p>Learn More</p>
+                <img src="/resources/icons/more.svg" alt="">
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer class="main-footer" id="tours-footer">
+        <div class="footer-content">
+            <p class="footer-rights">© 2020 Hiking New Zealand - all rights reserved.</p>
+            <div class="redes-sociales">
+                <a class="red-social" href="">
+                    <img src="/resources/icons/instagram.svg" alt="">
+                </a>
+                <a class="red-social" href="">
+                    <img src="/resources/icons/twitter.svg" alt="">
+                </a>
+                <a class="red-social" href="">
+                    <img src="/resources/icons/facebook.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="../shared.js"></script>
+</body>
+</html>
