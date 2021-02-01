@@ -166,7 +166,7 @@ body {
 }
 
 #signup-footer {
-    background-image: linear-gradient(to bottom, rgba(255,255,255,1) 15%, rgba(255, 255, 255, 0.2) 50% ), url('/resources/images/footer_background_3.jpg');
+    background-image: linear-gradient(to bottom, rgba(255,255,255,1) 15%, rgba(255, 255, 255, 0.2) 50% ), url('../resources/images/footer_background_3.jpg');
 }
 
 @media (min-width: 40rem) {
