@@ -88,6 +88,8 @@
 .plan-features {
     order: 3;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
     margin: 2rem auto;
@@ -98,6 +100,7 @@
     flex-direction: column;
     align-items: center;
     width: 33%;
+    padding: 0.2rem;
 }
 
 .plan-information {
@@ -278,6 +281,12 @@
         text-align: right;
     }
 
+}
+
+@media (min-width: 30rem) {
+    .plan-features {
+        flex-direction: row;
+    }
 }
 
 @media (min-width: 60rem) {
